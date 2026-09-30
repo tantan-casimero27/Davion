@@ -1,0 +1,563 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nathaniel Casimero | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #1e293b;
+            line-height: 1.7;
+        }
+
+        header {
+            background: #0f172a;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        header h2 {
+            color: #38bdf8;
+            font-size: 22px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 18px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        section {
+            padding: 70px 8%;
+            scroll-margin-top: 20px;
+        }
+
+        .hero {
+            background: #0f172a;
+            color: white;
+            text-align: center;
+            padding: 110px 8%;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .hero h3 {
+            color: #38bdf8;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            max-width: 700px;
+            margin: 0 auto 25px;
+            color: #cbd5e1;
+        }
+
+        .button {
+            display: inline-block;
+            background: #0284c7;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            margin: 5px;
+        }
+
+        .button:hover {
+            background: #0369a1;
+        }
+
+        h2 {
+            color: #0369a1;
+            margin-bottom: 25px;
+            font-size: 30px;
+        }
+
+        .about-text {
+            max-width: 850px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns:
+                repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px #00000010;
+            border: 1px solid #e2e8f0;
+        }
+
+        .card h3 {
+            color: #0369a1;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            margin-bottom: 8px;
+        }
+
+        .year {
+            color: #0284c7;
+            font-weight: bold;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .skills span {
+            background: #dbeafe;
+            color: #1d4ed8;
+            padding: 10px 18px;
+            border-radius: 25px;
+            font-weight: bold;
+        }
+
+        #education {
+            background: #e0f2fe;
+        }
+
+        #contact {
+            background: #e0f2fe;
+            text-align: center;
+        }
+
+        #contact p {
+            margin-bottom: 12px;
+        }
+
+        footer {
+            background: #0f172a;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        @media (max-width: 700px) {
+            header {
+                justify-content: center;
+                text-align: center;
+            }
+
+            nav {
+                text-align: center;
+            }
+
+            nav a {
+                margin: 6px;
+                display: inline-block;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            section {
+                padding: 50px 6%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION BAR -->
+
+    <header>
+        <h2>Nathaniel Casimero</h2>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#certificates">Certificates</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+
+    <!-- HOME SECTION -->
+
+    <section class="hero" id="home">
+
+        <h3>WELCOME TO MY PORTFOLIO</h3>
+
+        <h1>Nathaniel Jones E. Casimero</h1>
+
+        <p>
+            Welcome to my personal portfolio website.
+            I am a college student at ICCT Colleges
+            with an interest in technology, research,
+            and developing my professional skills.
+        </p>
+
+        <a href="#about" class="button">
+            About Me
+        </a>
+
+        <a href="#projects" class="button">
+            View My Projects
+        </a>
+
+    </section>
+
+
+    <!-- ABOUT ME SECTION -->
+
+    <section id="about">
+
+        <h2>About Me</h2>
+
+        <div class="about-text">
+
+            <p>
+                Hello! My name is Nathaniel Jones E. Casimero.
+                I am currently pursuing my college education
+                at ICCT Colleges in Cainta, Rizal.
+
+                I am interested in learning new technologies,
+                improving my skills, and gaining experience
+                through academic projects and collaboration.
+            </p>
+
+            <br>
+
+            <p>
+                My goal is to apply my abilities,
+                knowledge, and skills to contribute
+                to meaningful projects and future
+                professional opportunities.
+
+                This portfolio presents my educational
+                background, skills, certificates,
+                and projects.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- EDUCATION SECTION -->
+
+    <section id="education">
+
+        <h2>Educational Background</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>College</h3>
+
+                <p><strong>ICCT Colleges</strong></p>
+
+                <p>Cainta, Rizal</p>
+
+                <p class="year">
+                    2022 - Present
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Senior High School</h3>
+
+                <p><strong>Irenaeus College Inc.</strong></p>
+
+                <p>Roxas City, Capiz</p>
+
+                <p class="year">
+                    2020 - 2022
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Junior High School</h3>
+
+                <p><strong>Batad National High School</strong></p>
+
+                <p>Batad, Iloilo</p>
+
+                <p class="year">
+                    2016 - 2020
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Elementary</h3>
+
+                <p><strong>Binon-an Elementary School</strong></p>
+
+                <p>Batad, Iloilo</p>
+
+                <p class="year">
+                    2010 - 2016
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SKILLS SECTION -->
+
+    <section id="skills">
+
+        <h2>My Skills</h2>
+
+        <p>
+            These are the skills I have identified
+            in my resume.
+        </p>
+
+        <br>
+
+        <div class="skills">
+
+            <span>Multitasking</span>
+
+            <span>Teamwork and Cooperation</span>
+
+            <span>Time Management</span>
+
+        </div>
+
+    </section>
+
+
+    <!-- CERTIFICATES AND SEMINARS -->
+
+    <section id="certificates">
+
+        <h2>Certificates and Seminars</h2>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <h3>
+                    Advancing Research and Development
+                    in IoT for Smart Environments
+                </h3>
+
+                <p>
+                    Innovations and Future Directions
+                </p>
+
+                <p>
+                    <strong>Speaker:</strong>
+                    Engr. Mark Anthony V. Melendrez
+                </p>
+
+                <p>
+                    ICCT Colleges
+                </p>
+
+                <p class="year">
+                    March 6, 2025
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>
+                    Advancing Secure Networking
+                    for Smart Environment
+                </h3>
+
+                <p>
+                    Design, Threat Modeling,
+                    and Mitigation Strategies
+                </p>
+
+                <p>
+                    <strong>Speaker:</strong>
+                    Engr. Mark Anthony Melendrez
+                </p>
+
+                <p>
+                    ICCT Colleges
+                </p>
+
+                <p class="year">
+                    March 3, 2026
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>
+                    Bioinformatics and Digital Science
+                    Information in the Philippine Context
+                </h3>
+
+                <p>
+                    <strong>Speaker:</strong>
+                    Dr. Ian Kendrick Fontanilla
+                </p>
+
+                <p>
+                    ICCT Colleges
+                </p>
+
+                <p class="year">
+                    March 3, 2026
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROJECTS SECTION -->
+
+    <section id="projects">
+
+        <h2>My Projects</h2>
+
+        <p>
+            This section is for showcasing my academic,
+            technical, and personal projects.
+        </p>
+
+        <br>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <h3>My Academic Project</h3>
+
+                <p>
+                    Add the name and description
+                    of your academic project here.
+                </p>
+
+                <p>
+                    Describe the purpose of the project,
+                    the problem it addresses, and
+                    your contribution.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>My Technical Project</h3>
+
+                <p>
+                    Add your electronics, programming,
+                    or other technical project here.
+                </p>
+
+                <p>
+                    Include the technologies,
+                    tools, and components you used.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>Future Project</h3>
+
+                <p>
+                    This section can be updated
+                    whenever you complete a new project.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT SECTION -->
+
+    <section id="contact">
+
+        <h2>Contact Me</h2>
+
+        <p>
+            Thank you for visiting my portfolio!
+        </p>
+
+        <p>
+            Feel free to contact me for
+            professional inquiries or collaboration.
+        </p>
+
+        <p>
+            <strong>Email:</strong>
+            nathanielcasimero0@gmail.com
+        </p>
+
+        <a href="mailto:nathanielcasimero0@gmail.com"
+           class="button">
+            Send Me an Email
+        </a>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            &copy; 2026 Nathaniel Jones E. Casimero
+        </p>
+
+        <p>
+            Personal Portfolio Website
+        </p>
+
+    </footer>
+
+</body>
+</html>
